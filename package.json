@@ -1,0 +1,30 @@
+{
+  "name": "hapi-starter",
+  "version": "0.0.0",
+  "description": "Hapi starter learning path",
+  "author": "Dan Hedgecock",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "babel src --out-dir dist --extensions .ts --watch",
+    "lint": "eslint src/*.ts",
+    "start:dev": "nodemon ./dist/index.js"
+  },
+  "dependencies": {
+    "good": "^8.1.2",
+    "good-console": "^8.0.0",
+    "good-squeeze": "^5.1.0",
+    "hapi": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/hapi": "^18.0.1",
+    "eslint-config-eloquence": "^11.0.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4"
+  }
+}
